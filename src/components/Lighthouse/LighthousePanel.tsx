@@ -70,7 +70,7 @@ export const LighthousePanel: React.FC<LighthousePanelProps> = ({ requests, domD
 
     try {
       const session = await createGeminiNanoSession(
-        "You are DevTools Pro AI Advisor. Analyze these Lighthouse scores and generate a summary."
+        "You are Nexinspect AI Advisor. Analyze these Lighthouse scores and generate a summary."
       );
       const promptText = prompts.pageHealthSummary(
         report.performanceScore,

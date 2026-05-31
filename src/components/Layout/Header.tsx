@@ -51,7 +51,7 @@ export const Header: React.FC<HeaderProps> = ({
             WebkitTextFillColor: "transparent",
           }}
         >
-          DevTools Pro
+          Nexinspect
         </h1>
         <Badge
           variant={aiState.isAvailable ? "cyan" : "pink"}

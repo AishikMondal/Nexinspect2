@@ -1,9 +1,9 @@
 {
-  "name": "devtools-pro",
-  "displayName": "DevTools Pro",
+  "name": "nexinspect",
+  "displayName": "Nexinspect",
   "version": "1.0.0",
   "description": "AI-augmented browser analysis side panel with Network, Performance, Security, Lighthouse, and Accessibility tools.",
-  "author": "Antigravity Dev",
+  "author": "Aishik Mondal",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",

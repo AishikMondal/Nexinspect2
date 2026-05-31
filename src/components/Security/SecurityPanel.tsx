@@ -77,7 +77,7 @@ export const SecurityPanel: React.FC<SecurityPanelProps> = ({ report, aiState, d
     if (!aiState.isAvailable) { setAiError("Gemini Nano is not available on this device."); return; }
     setAiLoading(true); setAiError(""); setAiReport("");
     try {
-      const session = await createGeminiNanoSession("You are DevTools Pro AI Advisor. Analyze security findings and explain exposure risks with mitigations.");
+      const session = await createGeminiNanoSession("You are Nexinspect AI Advisor. Analyze security findings and explain exposure risks with mitigations.");
       const result = await session.prompt(prompts.securityRisks(report.headerReport.grade, report.headerReport.score, report.headerReport.headers.filter((h) => h.status !== "secure").map((h) => h.name), report.cookies.filter((c) => c.status !== "secure").length, criticalIssues.length));
       setAiReport(result);
       session.destroy();

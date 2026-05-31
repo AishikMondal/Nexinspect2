@@ -31,7 +31,7 @@ export const PerformancePanel: React.FC<PerformancePanelProps> = ({ data, aiStat
     if (!aiState.isAvailable) { setAiError("Gemini Nano is not available on this device."); return; }
     setAiLoading(true); setAiError(""); setAiReport("");
     try {
-      const session = await createGeminiNanoSession("You are DevTools Pro AI Advisor. Analyze Core Web Vitals and generate a root-cause diagnostic.");
+      const session = await createGeminiNanoSession("You are Nexinspect AI Advisor. Analyze Core Web Vitals and generate a root-cause diagnostic.");
       const fcp = data.vitals.FCP ? `${data.vitals.FCP.value}ms` : "N/A";
       const lcp = data.vitals.LCP ? `${data.vitals.LCP.value}ms` : "N/A";
       const cls = data.vitals.CLS ? `${data.vitals.CLS.value}` : "N/A";

@@ -145,7 +145,7 @@ Respond with:
   `,
 
   pageHealthSummary: (perf: number, acc: number, bp: number, seo: number) => `
-You are DevTools Pro AI. Give a quick, punchy "Page Health" summary based on these audit scores (0-100 scale). Keep it under 100 words.
+You are Nexinspect AI. Give a quick, punchy "Page Health" summary based on these audit scores (0-100 scale). Keep it under 100 words.
 Scores:
 - Performance: ${perf}/100
 - Accessibility: ${acc}/100

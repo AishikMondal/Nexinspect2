@@ -64,7 +64,7 @@ export const IssueTree: React.FC<IssueTreeProps> = ({ violations, aiState }) => 
 
     try {
       const session = await createGeminiNanoSession(
-        "You are DevTools Pro WCAG 2.1 AA Accessibility Expert. Generate precise, element-specific diagnostics in JSON."
+        "You are Nexinspect WCAG 2.1 AA Accessibility Expert. Generate precise, element-specific diagnostics in JSON."
       );
       const prompt = `Analyze this accessibility violation found on the webpage:
 - Violation Rule ID: ${item.id}

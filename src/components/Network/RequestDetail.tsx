@@ -33,7 +33,7 @@ export const RequestDetail: React.FC<RequestDetailProps> = ({ request, onClose, 
 
     try {
       const session = await createGeminiNanoSession(
-        "You are DevTools Pro AI Advisor. Analyze this network request and explain what could be causing the delay and how to fix it."
+        "You are Nexinspect AI Advisor. Analyze this network request and explain what could be causing the delay and how to fix it."
       );
       const url = request.url;
       const method = request.method;

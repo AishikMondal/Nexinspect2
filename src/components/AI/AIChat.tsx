@@ -47,7 +47,7 @@ export const AIChat: React.FC<AIChatProps> = ({ aiState, pageContext }) => {
 
     try {
       const session = await createGeminiNanoSession(
-        `You are DevTools Pro on-device AI Advisor. Answer user queries concisely using this page audit context: ${pageContext}`
+        `You are Nexinspect on-device AI Advisor. Answer user queries concisely using this page audit context: ${pageContext}`
       );
       const answer = await session.prompt(userText);
       

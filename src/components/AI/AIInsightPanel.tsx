@@ -35,7 +35,7 @@ export const AIInsightPanel: React.FC<AIInsightPanelProps> = ({ aiState, request
 
     try {
       const session = await createGeminiNanoSession(
-        "You are DevTools Pro on-device AI Advisor. Generate a punchy page status summary."
+        "You are Nexinspect on-device AI Advisor. Generate a punchy page status summary."
       );
       const prompt = `Give a 100-word summary of the current page status. Point out critical issues and suggest priority fixes. Metrics: ${pageContextString}`;
       const response = await session.prompt(prompt);
