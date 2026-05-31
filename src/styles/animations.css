@@ -1,0 +1,65 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 4px var(--accent-purple-glow), inset 0 0 2px var(--accent-purple-glow);
+    border-color: rgba(108, 99, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 12px var(--accent-purple-glow), inset 0 0 6px var(--accent-purple-glow);
+    border-color: rgba(108, 99, 255, 0.5);
+  }
+}
+
+@keyframes cyanPulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 4px var(--accent-cyan-glow), inset 0 0 2px var(--accent-cyan-glow);
+    border-color: rgba(0, 212, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 12px var(--accent-cyan-glow), inset 0 0 6px var(--accent-cyan-glow);
+    border-color: rgba(0, 212, 255, 0.5);
+  }
+}
+
+@keyframes textNeonGlow {
+  0%, 100% {
+    text-shadow: 0 0 2px var(--accent-cyan-glow);
+  }
+  50% {
+    text-shadow: 0 0 8px var(--accent-cyan-glow), 0 0 12px var(--accent-cyan-glow);
+  }
+}
+
+@keyframes borderRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-slide-in {
+  animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+.animate-cyan-pulse {
+  animation: cyanPulseGlow 2s infinite ease-in-out;
+}
+
+.animate-text-glow {
+  animation: textNeonGlow 3s infinite ease-in-out;
+}

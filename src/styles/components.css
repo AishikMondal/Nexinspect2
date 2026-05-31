@@ -1,0 +1,172 @@
+/* Cyberpunk Glassmorphism Card */
+.cyber-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 16px;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.cyber-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cyber-card.interactive {
+  cursor: pointer;
+}
+
+.cyber-card.interactive:hover {
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 10px var(--accent-purple-glow);
+}
+
+/* Cyberpunk Glassmorphism Button */
+.cyber-btn {
+  background: rgba(108, 99, 255, 0.1);
+  border: 1px solid var(--accent-purple);
+  color: var(--text-primary);
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--transition-fast);
+}
+
+.cyber-btn:hover:not(:disabled) {
+  background: var(--accent-purple);
+  box-shadow: 0 0 8px var(--accent-purple-glow);
+  transform: translateY(-1px);
+}
+
+.cyber-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.cyber-btn:disabled {
+  border-color: var(--border-color);
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.02);
+  cursor: not-allowed;
+}
+
+.cyber-btn.accent {
+  background: rgba(0, 212, 255, 0.1);
+  border-color: var(--accent-cyan);
+}
+
+.cyber-btn.accent:hover:not(:disabled) {
+  background: var(--accent-cyan);
+  color: var(--bg-primary);
+  box-shadow: 0 0 8px var(--accent-cyan-glow);
+}
+
+.cyber-btn.danger {
+  background: rgba(255, 0, 127, 0.1);
+  border-color: var(--accent-pink);
+}
+
+.cyber-btn.danger:hover:not(:disabled) {
+  background: var(--accent-pink);
+  box-shadow: 0 0 8px var(--accent-pink-glow);
+}
+
+/* Badges */
+.cyber-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid transparent;
+}
+
+.cyber-badge.purple {
+  background: rgba(108, 99, 255, 0.12);
+  color: var(--accent-purple);
+  border-color: rgba(108, 99, 255, 0.2);
+}
+
+.cyber-badge.cyan {
+  background: rgba(0, 212, 255, 0.12);
+  color: var(--accent-cyan);
+  border-color: rgba(0, 212, 255, 0.2);
+}
+
+.cyber-badge.pink {
+  background: rgba(255, 0, 127, 0.12);
+  color: var(--accent-pink);
+  border-color: rgba(255, 0, 127, 0.2);
+}
+
+.cyber-badge.green {
+  background: rgba(0, 230, 118, 0.12);
+  color: var(--accent-green);
+  border-color: rgba(0, 230, 118, 0.2);
+}
+
+.cyber-badge.yellow {
+  background: rgba(255, 179, 0, 0.12);
+  color: var(--accent-yellow);
+  border-color: rgba(255, 179, 0, 0.2);
+}
+
+/* Monospace Code Containers */
+.cyber-code-block {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px;
+  overflow: auto;
+  color: #adbac7;
+  max-height: 250px;
+}
+
+/* Flex Utilities */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-gap {
+  display: flex;
+  gap: 8px;
+}
+
+/* Section Titles */
+.panel-title {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: linear-gradient(90deg, var(--text-primary), var(--text-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+}
+
+.panel-subtitle {
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
